@@ -86,7 +86,7 @@ html {
 
 #poll {
     position: absolute;
-    bottom: -45px;
+    top: 250px;
     left: 900px;
 
 }
@@ -127,7 +127,7 @@ box-shadow: inset #f1a3b6 0 0 0px 2px, inset rgb(228, 251, 255) 0 0 0px 4px, ins
 
 body {
   /* Replace with your own image URL */
-  background-image: url(https://img.magnific.com/free-vector/abstract-pink-polka-dot-background_78370-4218.jpg?semt=ais_hybrid&w=740&q=80);
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/003/219/197/small/seamless-check-pink-pattern-textile-tartan-plaid-swatch-free-vector.jpg);
   
   /* Prevents the image from repeating like a tile */
   background-repeat: no-repeat;
