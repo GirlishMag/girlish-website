@@ -78,17 +78,11 @@ html {
     left: 250px;
     z-index: 1;}
 
+
 #musicplayer { 
     position: absolute;
-    top: 195px;
+    top: 310px;  /* only correct if #girlish height stays ~240px — fragile */
     left: 900px;
-}
-
-#poll {
-    position: absolute;
-    bottom: 0px;
-    left: 900px;
-
 }
 
 #crossword {
