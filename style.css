@@ -86,7 +86,7 @@ html {
 }
 #poll {
     position: absolute;
-    top: 780px;   /* 310 (musicplayer top) + 450 (estimated player height) + 20 (gap) */
+    top: 785px;   /* 310 (musicplayer top) + 455 (musicplayer height) + 20 (gap) */
     left: 900px;
 }
 #crossword {
