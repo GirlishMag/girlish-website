@@ -78,17 +78,15 @@ html {
     left: 250px;
     z-index: 1;}
 
-#musicplayer { 
-    position: absolute;
+#musicplayer {
+    position: relative; /* changed from absolute */
     top: 195px;
     left: 900px;
 }
 
 #poll {
-    position: absolute;
-    top: 450px;
-    left: 900px;
-
+    margin-top: 20px; /* small gap below the player */
+    /* remove position: absolute, top, and left entirely */
 }
 
 #crossword {
@@ -157,12 +155,12 @@ p5 {
       left: 650px;
 }
 
-form1 {
-     font-family: "Courier New";
-      Font-size: 15px;
-      position: absolute;
-      bottom: 20px;
-      left: 300px;
+#form1 {
+    font-family: "Courier New";
+    font-size: 15px;
+    position: absolute;
+    top: 210px;   /* 70 (girlish top) + 120 (girlish total height) + 20 (gap) */
+    left: 900px;  /* same left as #girlish so it aligns underneath */
 }
 
 p6 {
