@@ -86,7 +86,7 @@ html {
 
 #poll {
     position: absolute;
-    top: 350px;
+    top: 450px;
     left: 900px;
 
 }
@@ -161,7 +161,7 @@ form1 {
      font-family: "Courier New";
       Font-size: 15px;
       position: absolute;
-      bottom: -50px;
+      bottom: 20px;
       left: 300px;
 }
 
