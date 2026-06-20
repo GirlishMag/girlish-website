@@ -2,12 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=1200">
     <title>Girlish Magazine</title>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
-    <link rel="stylesheet" href="style.css">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
 <script type="text/javascript">
 // <![CDATA[
 var colours=new Array( 'plum', 'pink', 'white', 'coral', 'bisque'); // colours of the stars
@@ -185,22 +184,6 @@ return (div);
 }
 // ]]>
 </script>
-                        
-
-
-  </head> 
-   <style>
-   
- body {
-
-
-
- .container { display: flex}
- </style>
- <div id="wrapper">
-  <body>
- 
-
 
     <style>
 body {
@@ -233,13 +216,8 @@ ul li a:hover {
   background-color: pink;
 }
 </style>
-</head>
-<body>
 
-<ul>
-<h2> GirlishMagazine.com </h2>
-</ul>
-     <style>
+    <style>
             #musicplayer{
                 font-family:'Courier New'; /* default font */
                 background:white; /* background color of player */
@@ -335,8 +313,17 @@ ul li a:hover {
                 border:none; /* removes weird border around seeker square in firefox */
             }
         </style>
-    </head>
-    <body>
+  </head>
+  <body>
+
+<ul>
+<h2> GirlishMagazine.com </h2>
+</ul>
+
+        <!-- #musicplayer and #poll now share one wrapper (#sidebar) so the
+             poll always sits just below the player, no matter how tall the
+             player ends up being -->
+        <div id="sidebar">
         <div id="musicplayer">
             <div class="now-playing">Playing 1 of 2</div>
  
@@ -369,6 +356,10 @@ ul li a:hover {
             </div>
  
             <audio id="music" src=""></audio>
+        </div>
+
+        <div id="poll">
+<form method="post" action="https://poll.pollcode.com/31456232"><div style="background-color:#FFE0AB;padding:2px;width:175px;font-family:Arial;font-size:small;color:#3BAAFF;"><div style="padding:2px 0px 4px 2px;"><strong>Favorite Subject?</strong></div><input type="radio" name="answer" value="1" id="answer314562321" style="float:left;" /><label for="answer314562321" style="float:left;width:150px;">Math</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer314562322" style="float:left;" /><label for="answer314562322" style="float:left;width:150px;">Science</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer314562323" style="float:left;" /><label for="answer314562323" style="float:left;width:150px;">Art</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer314562324" style="float:left;" /><label for="answer314562324" style="float:left;width:150px;">English</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer314562325" style="float:left;" /><label for="answer314562325" style="float:left;width:150px;">History</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form></div>
         </div>
  
         <script>
@@ -536,8 +527,8 @@ ul li a:hover {
                     total_duration.textContent = durationMinutes + ":" + durationSeconds;
                 }
             }
-        </script>  <div id="poll">
-<form method="post" action="https://poll.pollcode.com/31456232"><div style="background-color:#FFE0AB;padding:2px;width:175px;font-family:Arial;font-size:small;color:#3BAAFF;"><div style="padding:2px 0px 4px 2px;"><strong>Favorite Subject?</strong></div><input type="radio" name="answer" value="1" id="answer314562321" style="float:left;" /><label for="answer314562321" style="float:left;width:150px;">Math</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer314562322" style="float:left;" /><label for="answer314562322" style="float:left;width:150px;">Science</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer314562323" style="float:left;" /><label for="answer314562323" style="float:left;width:150px;">Art</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer314562324" style="float:left;" /><label for="answer314562324" style="float:left;width:150px;">English</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer314562325" style="float:left;" /><label for="answer314562325" style="float:left;width:150px;">History</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form></div>
+        </script>
+
    <div id="crossword"><script type="text/javascript">
 boatload_puzzles_format = 'CompactPortrait';</script>
 <p>Loading <a href="https://www.boatloadpuzzles.com/playcrossword">
@@ -574,9 +565,6 @@ src="//www.boatloadpuzzles.com/Crossword.js"></script></div>
 
 </style>
   <a class="btn">Click below!</a> </div>  
- 
-</div>
-</div>
 
 <p5>
   <b>Girlish.</b>
@@ -602,7 +590,5 @@ src="//www.boatloadpuzzles.com/Crossword.js"></script></div>
 
 <p8> <b>Follow us on TikTok and Instagram at @girlishmag !</b> </p8>
 
-  
-</div>
   </body>
   </html>
