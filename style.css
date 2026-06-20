@@ -81,12 +81,12 @@ html {
 
 #musicplayer { 
     position: absolute;
-    top: 310px;  /* only correct if #girlish height stays ~240px — fragile */
+    top: 250px;  /* only correct if #girlish height stays ~240px — fragile */
     left: 900px;
 }
 #poll {
     position: absolute;
-    top: 600px;   /* 310 (musicplayer top) + 455 (musicplayer height) + 20 (gap) */
+    top: 400px;   /* 310 (musicplayer top) + 455 (musicplayer height) + 20 (gap) */
     left: 900px;
 }
 #crossword {
