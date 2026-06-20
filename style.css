@@ -84,7 +84,11 @@ html {
     top: 310px;  /* only correct if #girlish height stays ~240px — fragile */
     left: 900px;
 }
-
+#poll {
+    position: absolute;
+    top: 780px;   /* 310 (musicplayer top) + 450 (estimated player height) + 20 (gap) */
+    left: 900px;
+}
 #crossword {
     position: absolute;
     top: 70px;
