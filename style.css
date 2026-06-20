@@ -142,7 +142,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 280px;
   max-width: 280px;
   padding: 15px;
   box-sizing: border-box;
@@ -164,7 +164,7 @@ input {
   font-family: 'Courier New', monospace;
   background: white;
   border: 4px solid #4cd4de;
-  width: 100%;
+  width: 280px;
   max-width: 280px;        /* was: 220px */
   box-sizing: border-box;
   padding: 10px;
@@ -259,11 +259,11 @@ input[type=range]::-moz-range-thumb {
 }
 
 #poll {
-  width: 100%;
-  max-width: 280px;        /* was: 220px */
-  box-sizing: border-box;  /* new */
+  width: 280px;
+  max-width: 280px;
+  box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;   /* was: center */
 }
 
 #poll form > div {
