@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/003/219/197/small/seamless-check-pink-pattern-textile-tartan-plaid-swatch-free-vector.jpg);
+  background-image: url(https://img.magnific.com/free-vector/abstract-pink-polka-dot-background_78370-4218.jpg?semt=ais_hybrid&w=740&q=80);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -65,7 +65,7 @@ input {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 4px;
+  gap: 6px;
   max-width: 1100px;
   margin: 30px auto;
   padding: 0 20px;
@@ -73,12 +73,12 @@ input {
 }
 
 .col {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  flex: 1 1 280px;
-  max-width: 340px;
+  flex: none;
+  width: auto;
 }
 
 /* =========================================================
@@ -89,8 +89,7 @@ input {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 100%;
-  max-width: 300px;
+  width: 330px;
   padding: 15px;
   box-sizing: border-box;
   background-color: rgb(255, 215, 222);
@@ -102,6 +101,7 @@ input {
   top: -14px;
   left: -14px;
   z-index: 2;
+  width: max-content;
   transform: rotate(-6deg);
 }
 
