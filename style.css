@@ -65,7 +65,7 @@ input {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 6px;
   max-width: 1100px;
   margin: 30px auto;
   padding: 0 20px;
@@ -75,7 +75,7 @@ input {
 .col {
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;   /* was: center */
+  align-items: flex-start;
   gap: 20px;
   flex: none;
   width: auto;
@@ -143,7 +143,6 @@ input {
   justify-content: center;
   align-items: center;
   width: 280px;
-  max-width: 280px;
   padding: 15px;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
@@ -155,17 +154,16 @@ input {
 #sidebar {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;   /* was: center */
+  align-items: flex-start;
   gap: 20px;
   width: 100%;
 }
 
 #musicplayer {
-  font-family: 'Courier New', monospace;
-  background: white;
-  border: 4px solid #4cd4de;
+  font-family: 'Courier New', monospace; /* default font */
+  background: white; /* background color of player */
+  border: 4px solid #4cd4de; /* border around player */
   width: 280px;
-  max-width: 280px;        /* was: 220px */
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
@@ -260,10 +258,9 @@ input[type=range]::-moz-range-thumb {
 
 #poll {
   width: 280px;
-  max-width: 280px;
   box-sizing: border-box;
   display: flex;
-  justify-content: flex-start;   /* was: center */
+  justify-content: flex-start;
 }
 
 #poll form > div {
