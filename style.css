@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  background-image: url(https://img.magnific.com/free-vector/abstract-pink-polka-dot-background_78370-4218.jpg?semt=ais_hybrid&w=740&q=80);
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/003/219/197/small/seamless-check-pink-pattern-textile-tartan-plaid-swatch-free-vector.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -161,11 +161,11 @@ input {
 }
 
 #musicplayer {
-  font-family: 'Courier New', monospace; /* default font */
-  background: white; /* background color of player */
-  border: 4px solid #4cd4de; /* border around player */
+  font-family: 'Courier New', monospace;
+  background: white;
+  border: 4px solid #4cd4de;
   width: 100%;
-  max-width: 220px;
+  max-width: 280px;        /* was: 220px */
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
@@ -260,7 +260,8 @@ input[type=range]::-moz-range-thumb {
 
 #poll {
   width: 100%;
-  max-width: 220px;
+  max-width: 280px;        /* was: 220px */
+  box-sizing: border-box;  /* new */
   display: flex;
   justify-content: center;
 }
