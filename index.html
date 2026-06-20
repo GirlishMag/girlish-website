@@ -316,75 +316,101 @@ ul li a:hover {
   </head>
   <body>
 
-<ul>
-<h2> GirlishMagazine.com </h2>
-</ul>
+<header class="site-header">
+  <h2>GirlishMagazine.com</h2>
+</header>
 
-        <!-- #musicplayer and #poll now share one wrapper (#sidebar) so the
-             poll always sits just below the player, no matter how tall the
-             player ends up being -->
-        <div id="sidebar">
-        <div id="musicplayer">
-            <div class="now-playing">Playing 1 of 2</div>
- 
-            <div class="track-info">
-                <div class="track-name">Song Name</div>
-                <div class="track-artist"></div>
-            </div>
- 
-            <div class="controls">
-                <div class="seeking">
-                    <div class="current-time">00:00</div>
- 
-                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
- 
-                    <div class="total-duration">0:00</div>
-                </div>
- 
-                <div class="buttons">
-                    <div class="prev-track" onclick="prevTrack()">&#171;</div>
- 
-                    <div class="playpause-track" onclick="playpauseTrack()">&#9654;</div>
- 
-                    <div class="next-track" onclick="nextTrack()">&#187;</div>
-                </div>
- 
-                <div class="volume">
-                    <div class="volume-icon">&#128362;</div>
-                    <input type="range" min="1" max="100" value="25" class="volume_slider" onchange="setVolume()"> <!-- the default volume value is 25, change this if you want it to be higher or lower (i wouldn't recommend it bc it gets really loud) -->
-                </div>
-            </div>
- 
-            <audio id="music" src=""></audio>
-        </div>
+<main class="layout">
 
-        <div id="poll">
+  <div class="col col-intro">
+    <div id="one"> 
+      <a href="https://payhip.com/b/Cwa1E"><img src="https://www.image2url.com/r2/default/images/1781827615099-d4e9118b-84f7-446e-b0f6-46937504b8fe.jpg" alt="Girlish Logo" width="300"/></a>
+    </div>
+
+    <div id="button"> 
+      <a class="btn">Click below!</a>
+    </div>
+  </div>
+
+  <div class="col col-crossword">
+    <div id="crossword"><script type="text/javascript">
+boatload_puzzles_format = 'CompactPortrait';</script>
+<p>Loading <a href="https://www.boatloadpuzzles.com/playcrossword">
+crossword puzzle</a>. One moment please.</p>
+<script type="text/javascript"
+src="//www.boatloadpuzzles.com/Crossword.js"></script></div>
+  </div>
+
+  <div class="col col-about">
+    <div id="girlish">
+      <p>We are <i><b>Girlish</b></i>, an educational and career magazine for girls by girls, design inspired by pop-culture magazines in the early 2000s.</p>
+    </div>
+
+    <!-- #musicplayer and #poll share one wrapper (#sidebar) so the poll
+         always sits just below the player, no matter how tall the player
+         ends up being. #sidebar flows naturally underneath #girlish in
+         this column on every screen size. -->
+    <div id="sidebar">
+      <div id="musicplayer">
+          <div class="now-playing">Playing 1 of 2</div>
+
+          <div class="track-info">
+              <div class="track-name">Song Name</div>
+              <div class="track-artist"></div>
+          </div>
+
+          <div class="controls">
+              <div class="seeking">
+                  <div class="current-time">00:00</div>
+                  <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                  <div class="total-duration">0:00</div>
+              </div>
+
+              <div class="buttons">
+                  <div class="prev-track" onclick="prevTrack()">&#171;</div>
+                  <div class="playpause-track" onclick="playpauseTrack()">&#9654;</div>
+                  <div class="next-track" onclick="nextTrack()">&#187;</div>
+              </div>
+
+              <div class="volume">
+                  <div class="volume-icon">&#128362;</div>
+                  <input type="range" min="1" max="100" value="25" class="volume_slider" onchange="setVolume()"> <!-- the default volume value is 25, change this if you want it to be higher or lower (i wouldn't recommend it bc it gets really loud) -->
+              </div>
+          </div>
+
+          <audio id="music" src=""></audio>
+      </div>
+
+      <div id="poll">
 <form method="post" action="https://poll.pollcode.com/31456232"><div style="background-color:#FFE0AB;padding:2px;width:175px;font-family:Arial;font-size:small;color:#3BAAFF;"><div style="padding:2px 0px 4px 2px;"><strong>Favorite Subject?</strong></div><input type="radio" name="answer" value="1" id="answer314562321" style="float:left;" /><label for="answer314562321" style="float:left;width:150px;">Math</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer314562322" style="float:left;" /><label for="answer314562322" style="float:left;width:150px;">Science</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer314562323" style="float:left;" /><label for="answer314562323" style="float:left;width:150px;">Art</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer314562324" style="float:left;" /><label for="answer314562324" style="float:left;width:150px;">English</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer314562325" style="float:left;" /><label for="answer314562325" style="float:left;width:150px;">History</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form></div>
-        </div>
- 
-        <script>
+    </div>
+  </div>
+
+</main>
+
+<script>
             // initiate variables
             let now_playing = document.querySelector(".now-playing");
             let track_name = document.querySelector(".track-name");
             let track_artist = document.querySelector(".track-artist");
- 
- 
+
+
             let playpause_btn = document.querySelector(".playpause-track");
             let next_btn = document.querySelector(".next-track");
             let prev_btn = document.querySelector(".prev-track");
- 
+
             let seek_slider = document.querySelector(".seek_slider");
             let volume_slider = document.querySelector(".volume_slider");
             let curr_time = document.querySelector(".current-time");
             let total_duration = document.querySelector(".total-duration");
- 
+
             let track_index = 0;
             let isPlaying = false;
             let updateTimer;
- 
+
             // create new audio element
             let curr_track = document.getElementById("music");
- 
+
             //
             // DEFINE YOUR SONGS HERE!!!!!
             // MORE THAN FOUR SONGS CAN BE ADDED!!
@@ -417,61 +443,61 @@ ul li a:hover {
             //
             //
             //
- 
+
             function loadTrack(track_index){
                 clearInterval(updateTimer);
                 resetValues();
- 
+
                 // load a new track
                 curr_track.src = track_list[track_index].path;
                 curr_track.load();
- 
+
                 // update details of the track
                 track_name.textContent = track_list[track_index].name;
                 track_artist.textContent = track_list[track_index].artist;
                 now_playing.textContent = "Playing " + (track_index + 1) + " of " + track_list.length;
- 
+
                 // set an interval of 1000 milliseconds for updating the seek slider
                 updateTimer = setInterval(seekUpdate, 1000);
- 
+
                 // move to the next track if the current one finishes playing 
                 curr_track.addEventListener("ended", nextTrack);
- 
+
             }
- 
+
             // reset values
             function resetValues(){
                 curr_time.textContent = "0:00";
                 total_duration.textContent = "0:00";
                 seek_slider.value = 0;
             }
- 
+
             // load the first track in the tracklist
             loadTrack(track_index);
- 
+
             // checks if song is playing
             function playpauseTrack(){
                 if (!isPlaying) playTrack();
                 else pauseTrack();
             }
- 
+
             // plays track when play button is pressed
             function playTrack(){
                 curr_track.play();
                 isPlaying = true;
- 
+
                 // replace icon with the pause icon
                 playpause_btn.innerHTML = '&#9646;';
             }
- 
+
             // pauses track when pause button is pressed
             function pauseTrack(){
                 curr_track.pause();
                 isPlaying = false;
- 
+
                 playpause_btn.innerHTML = '&#9654;';
             }
- 
+
             // moves to the next track
             function nextTrack(){
                 if (track_index < track_list.length - 1)
@@ -480,7 +506,7 @@ ul li a:hover {
                 loadTrack(track_index);
                 playTrack();
             }
- 
+
             // moves to the previous track
             function prevTrack(){
                 if (track_index > 0)
@@ -489,106 +515,71 @@ ul li a:hover {
                 loadTrack(track_index);
                 playTrack();
             }
- 
+
             // seeker slider
             function seekTo(){
                 seekto = curr_track.duration * (seek_slider.value / 100);
                 curr_track.currentTime = seekto;
             }
- 
+
             // volume slider
             function setVolume(){
                 curr_track.volume = volume_slider.value / 100;
             }
- 
+
             setVolume();
- 
+
             function seekUpdate(){
                 let seekPosition = 0;
- 
+
                 // check if the current track duration is a legible number
                 if (!isNaN(curr_track.duration)){
                     seekPosition = curr_track.currentTime * (100 / curr_track.duration);
                     seek_slider.value = seekPosition;
- 
+
                     // calculate the time left and the total duration
                     let currentMinutes = Math.floor(curr_track.currentTime / 60);
                     let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
                     let durationMinutes = Math.floor(curr_track.duration / 60);
                     let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
- 
+
                     // adding a zero to the single digit time values
                     if (currentSeconds < 10){ currentSeconds = "0" + currentSeconds; }
                     if (durationSeconds < 10){ durationSeconds = "0" + durationSeconds; }
                     if (currentMinutes < 10){ currentMinutes = currentMinutes; }
                     if (durationMinutes < 10){ durationMinutes = durationMinutes; }
- 
+
                     curr_time.textContent = currentMinutes + ":" + currentSeconds;
                     total_duration.textContent = durationMinutes + ":" + durationSeconds;
                 }
             }
         </script>
 
-   <div id="crossword"><script type="text/javascript">
-boatload_puzzles_format = 'CompactPortrait';</script>
-<p>Loading <a href="https://www.boatloadpuzzles.com/playcrossword">
-crossword puzzle</a>. One moment please.</p>
-<script type="text/javascript"
-src="//www.boatloadpuzzles.com/Crossword.js"></script></div> 
+<footer class="site-footer">
+  <p5>
+    <b>Girlish.</b>
+  </p5>
 
-<div id="one"> 
- 
-<a href="https://payhip.com/b/Cwa1E"><img src="https://www.image2url.com/r2/default/images/1781827615099-d4e9118b-84f7-446e-b0f6-46937504b8fe.jpg" alt="Girlish Logo" 
-  width="300"/>
-  <style="width:300px;height:400px;"></a> </div>
-   
-
-  
-<div id="girlish">
-    <p>We are <i><b>Girlish</b></i>, an educational and career magazine for girls by girls, design inspired by pop-culture magazines in the early 2000s.</p>
-     </div>
-<div id="button"> 
- <style>
-:root {
-    --color1: #f390b0;
-    --color2: #f8bac9;
-    --color3: #fbd9e0;
-}
-.btn {
-    background-image: radial-gradient(100% 100% at top, var(--color2) 30%, var(--color3) 66%, var(--color1) 66% 70%, var(--color2) 90%) !important;
-    box-shadow: inset 0px 0px 0px 2px var(--color1), 0px 0px 0px 2.5px white;
-    border-radius:99px;
-    padding: 5px !important;
-    color: rgb(12, 105, 151);
-   
-}
-
-</style>
-  <a class="btn">Click below!</a> </div>  
-
-<p5>
-  <b>Girlish.</b>
-</p5>
-
-<form1 action="" method="get" class="form-example">
-  <div class="form-example">
-    <label for="name"> <b> Enter your name:</b> </label>
-    <input type="text" name="name" id="name" required />
-  </div>
-  <div class="form-example">
-    <label for="email"> <b> Enter your email:</b> </label>
-    <input type="email" name="email" id="email" required />
-  </div>
-  <div class="form-example">
-    <input type="submit" value="Subscribe to our mailing list!" />
-  </div>
-</form1>
+  <form1 action="" method="get" class="form-example">
+    <div class="form-example">
+      <label for="name"> <b> Enter your name:</b> </label>
+      <input type="text" name="name" id="name" required />
+    </div>
+    <div class="form-example">
+      <label for="email"> <b> Enter your email:</b> </label>
+      <input type="email" name="email" id="email" required />
+    </div>
+    <div class="form-example">
+      <input type="submit" value="Subscribe to our mailing list!" />
+    </div>
+  </form1>
 
   <p6>
-  <b>Contact us at <u>girlishmagazine@gmail.com</u> if you have any questions, comments, or concerns :)</b>
-</p6>
+    <b>Contact us at <u>girlishmagazine@gmail.com</u> if you have any questions, comments, or concerns :)</b>
+  </p6>
 
-<p8> <b>Follow us on TikTok and Instagram at @girlishmag !</b> </p8>
+  <p8> <b>Follow us on TikTok and Instagram at @girlishmag !</b> </p8>
+</footer>
 
   </body>
   </html>
