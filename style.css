@@ -290,13 +290,13 @@ p5 {
   text-align: center;
 }
 
-form1 {
+#subscribe-form {
   display: block;
   font-family: "Courier New", monospace;
   font-size: 15px;
 }
 
-form1 .form-example {
+#subscribe-form .form-example {
   margin: 8px 0;
 }
 
