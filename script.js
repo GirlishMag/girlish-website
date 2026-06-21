@@ -1,10 +1,10 @@
-const form = document.getElementById('form');
-const submitBtn = form.querySelector('button[type="submit"]');
+const form1 = document.getElementById('form');
+const submitBtn = form1.querySelector('button[type="submit"]');
 
-form.addEventListener('submit', async (e) => {
+form1.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(form);
+    const formData = new FormData(form1);
     formData.append("access_key", "21308d4a-a3f2-494c-a005-62b2306298b9");
 
     const originalText = submitBtn.textContent;
@@ -21,8 +21,8 @@ form.addEventListener('submit', async (e) => {
         const data = await response.json();
 
         if (response.ok) {
-            alert("Success! Your message has been sent.");
-            form.reset();
+            alert("Success! Thanks for joining!.");
+            form1.reset();
         } else {
             alert("Error: " + data.message);
         }
