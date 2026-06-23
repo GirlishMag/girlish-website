@@ -64,7 +64,7 @@ input {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 6px;
+  gap: 20px;
   max-width: 1100px;
   margin: 30px auto;
   padding: 0 20px;
@@ -168,7 +168,7 @@ input {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .songtitle, .track-info, .now-playing {
